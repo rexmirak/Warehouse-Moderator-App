@@ -6,23 +6,33 @@ import ProductCard from "../components/ProductCard";
 export default function Products() {
   const router = useRouter();
 
+
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 21;
+  const itemsPerPage = 12; //for pagination 
+  const [error, setError] = useState(null);
 
   // Fetch product data from API
   useEffect(() => {
     async function fetchProducts() {
+      let response;
       try {
-        const response = await fetch(
+        response = await fetch(
           "https://6776992512a55a9a7d0c4868.mockapi.io/products"
         );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const data = await response.json();
         setProducts(data);
         setLoading(false);
       } catch (error) {
         console.error("Failed to fetch products:", error);
+        setError("Failed to fetch products. Please try again later.");
+        setLoading(false);
+
       }
     }
     fetchProducts();
