@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
-import { Home, ShoppingBag, ChartBar, Cog, HomeIcon, ShoppingBagIcon, ChartBarIcon, CogIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, ShoppingBagIcon, ChartBarIcon, CogIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 export default function SideNav() {
@@ -31,7 +31,7 @@ export default function SideNav() {
           <Link onClick={() => setIsOpen(false)} href={{ pathname: "/", query: { pageTitle: "Moderation App Home" } }}>
            <Button text="Home" icon={HomeIcon} />
           </Link>
-          <Link onClick={() => setIsOpen(false)} href={{ pathname: "/products", query: { pageTitle: "Products" } }}>
+          <Link onClick={() => setIsOpen(false)} href={{ pathname: "/products"}}>
              <Button text="Products" icon={ShoppingBagIcon} />
           </Link>
           <Link onClick={() => setIsOpen(false)} href={{ pathname: "/tbd", query: { pageTitle: "Dashboard" } }}>

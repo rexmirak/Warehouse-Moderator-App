@@ -11,9 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-blue-500 font-bold text-3xl text-center ">
-          Welcome to <span className='text-blue-700'> {pageTitle || "Moderation App Home"}</span>
-        </h1>
+      <h1
+  className="lg:text-5xl font-bold text-center bg-gradient-to-r from-blue-500 via-gray-300 to-blue-500 bg-clip-text text-transparent animate-silverTrace bg-[length:200%]"
+>
+  Welcome to Moderation App Home
+</h1>
+
+
 
         <div className="flex items-center justify-center flex-wrap max-w-[800px] mt-12">
           <Card

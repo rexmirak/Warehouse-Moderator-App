@@ -12,7 +12,7 @@ export default function products() {
       </Head>
       <main>
       <h1 className="text-blue-500 font-bold text-3xl align-top">
-          {pageTitle || "Moderation App Home"}
+          {pageTitle || "TBD"}
         </h1>
       </main>
     </div>
