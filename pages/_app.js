@@ -28,7 +28,7 @@ export default function MyApp({ Component, pageProps }) {
     </div>
 
       {/* Main Content Area */}
-      <div className="lg:w-4/5 w-full p-4">
+      <div className="lg:w-4/5 w-full p-4 z-60">
     {/* Content for the right column */}
     <Component {...pageProps} />
     </div>
