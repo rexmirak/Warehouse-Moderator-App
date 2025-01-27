@@ -174,34 +174,34 @@ The layout uses **Tailwind CSS**'s responsive utilities. Key breakpoints include
 ## Screenshots
 
 ##### 1. Home Page in Light Mode 
-![Home](./Light_Home.png)
+![Home](./public/Light_Home.png)
+
+##### 2. Home Page in Dark Mode 
+![Home](./public/dark_home.png)
 
 ##### 2. Product Details Page in Light Mode 
-![Details](./Light_details.png)
+![Details](./public/Light_details.png)
 
 ##### 3. Product Details Page in Dark Mode 
-![Details Dark](./dark_details.png)
+![Details Dark](./public/dark_details.png)
 
 ##### 4. Product Details Page in Dark Mode - Small Screen 
-![Details Small](./small_dark_home.png)
+![Details Small](./public/small_dark_home.png)
 
 ##### 5. Loading Screen in Light Mode 
-![Loading](./Loading_Light.png)
+![Loading](./public/Loading_Light.png)
 
-##### 6. Loading Screen in Dark Mode 
-![Loading Dark](./dark_home.png)
+##### 6. Collapsible Menu - Small Screen
+![Menu Small](./public/small_menu.png)
 
-##### 7. Collapsible Menu - Small Screen
-![Menu Small](./small_menu.png)
+##### 7. Products Page in Light Mode 
+![Products](./public/Light_products.png)
 
-##### 8. Products Page in Light Mode 
-![Products](./Light_products.png)
+##### 8. Products Page in Dark Mode 
+![Products Dark](./public/dark_products.png)
 
-##### 9. Products Page in Dark Mode 
-![Products Dark](./dark_products.png)
-
-##### 10. Products Page in Dark Mode - Small Screen 
-![Products Small](./small_products.png)
+##### 9. Products Page in Dark Mode - Small Screen 
+![Products Small](./public/small_products.png)
 
 ---
 
