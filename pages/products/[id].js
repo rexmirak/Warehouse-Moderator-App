@@ -55,40 +55,45 @@ export default function ProductDetails() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex justify-center items-center bg-gray-100">
-        <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      <div className="min-h-screen flex justify-center items-center bg-gray-100 dark:bg-gray-900">
+        <div className="w-16 h-16 border-4 border-blue-500 dark:border-yellow-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col justify-start items-center p-8 bg-gray-50">
+    <div className="min-h-screen flex flex-col justify-start items-center p-8 bg-gray-50 dark:bg-gray-900">
       {/* Product Details */}
-      <h1 className="text-3xl font-bold text-blue-500 mb-4">
+      <h1 className="text-3xl font-bold text-blue-500 dark:text-blue-500 mb-4">
         Product Details
       </h1>
-      <div className="p-4 border border-gray-300 rounded-lg shadow-md max-w-md w-full mb-8">
-        <p className="text-lg font-bold text-gray-700">ID: {product.id}</p>
-        <p className="text-lg text-gray-700">
+      <div className="p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md max-w-md w-full mb-8 bg-white dark:bg-gray-800">
+        <p className="text-lg font-bold text-gray-700 dark:text-gray-300">ID: {product.id}</p>
+        <p className="text-lg text-gray-700 dark:text-gray-300">
           Name: {product.productName}
         </p>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-gray-700 dark:text-gray-300">
           Variant: {product.productVariant}
         </p>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-gray-700 dark:text-gray-300">
           Price: ${product.productPrice}
         </p>
       </div>
 
       {/* Update Form */}
       <form
-        className="w-full max-w-md bg-white p-6 border border-gray-300 rounded-lg shadow-md"
+        className="w-full max-w-md bg-white dark:bg-gray-800 p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-2xl font-bold text-gray-700 mb-4">Update Product Details</h2>
+        <h2 className="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-4">
+          Update Product Details
+        </h2>
 
         <div className="mb-4">
-          <label htmlFor="productName" className="block text-gray-700 font-medium mb-2">
+          <label
+            htmlFor="productName"
+            className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+          >
             Name
           </label>
           <input
@@ -97,12 +102,15 @@ export default function ProductDetails() {
             name="productName"
             value={formData.productName}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full dark:text-black px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-yellow-500"
           />
         </div>
 
         <div className="mb-4">
-          <label htmlFor="productVariant" className="block text-gray-700 font-medium mb-2">
+          <label
+            htmlFor="productVariant"
+            className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+          >
             Variant
           </label>
           <input
@@ -111,12 +119,15 @@ export default function ProductDetails() {
             name="productVariant"
             value={formData.productVariant}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full dark:text-black px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-yellow-500"
           />
         </div>
 
         <div className="mb-4">
-          <label htmlFor="productPrice" className="block text-gray-700 font-medium mb-2">
+          <label
+            htmlFor="productPrice"
+            className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
+          >
             Price
           </label>
           <input
@@ -125,13 +136,13 @@ export default function ProductDetails() {
             name="productPrice"
             value={formData.productPrice}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-yellow-500 dark:text-black"
           />
         </div>
 
         <button
           type="submit"
-          className="w-full py-2 px-4 text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors"
+          className="w-full py-2 px-4 text-white bg-blue-500  rounded-md hover:bg-blue-600 dark:hover:bg-gray-500 transition-colors"
         >
           Update Product
         </button>

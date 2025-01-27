@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
       <main>
       <h1
-  className="lg:text-5xl font-bold text-center bg-gradient-to-r from-blue-500 via-gray-300 to-blue-500 bg-clip-text text-transparent animate-silverTrace bg-[length:200%]"
+  className="lg:text-5xl text-3xl font-bold text-center bg-gradient-to-r from-blue-500 via-gray-300 to-blue-500 bg-clip-text text-transparent animate-silverTrace bg-[length:200%]"
 >
-  Welcome to Moderation App Home
+  Moderation App Home
 </h1>
 
 
