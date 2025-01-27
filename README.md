@@ -191,7 +191,7 @@ The layout uses **Tailwind CSS**'s responsive utilities. Key breakpoints include
 ##### 6. Loading Screen Dark Mood 
 ![Loading Dark](./screenshots/loading_dark.png)
 
-##### 7. Collapsable Menu in Small Screen
+##### 7. Collapsible Menu in Small Screen
 ![Menu Small](./screenshots/menu_small.png)
 
 ##### 8. Products Page in Light Mood 
