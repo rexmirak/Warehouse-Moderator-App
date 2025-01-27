@@ -10,7 +10,7 @@ export default function SideNav({ theme, toggleTheme }) {
     <div className="flex flex-col w-full ">
       {/* Header / Hamburger Menu */}
       <div className="flex items-center z-50 justify-between p-4 bg-gray-100 dark:bg-gray-800">
-        <div className="text-xl font-bold text-blue-500 dark:text-white">Navigation</div>
+        <div className="text-xl font-bold text-blue-500 dark:text-white"> { theme==="light"? <img src="/Logo.png" alt="TURUQ" className="lg:w-full w-20" />: <img src="/Logo1.png" alt="TURUQ" className="lg:w-full w-20" /> } </div>
         <button
           className="lg:hidden p-2 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
